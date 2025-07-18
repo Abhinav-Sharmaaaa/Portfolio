@@ -1,0 +1,224 @@
+body{
+    background-color: rgb(26, 26, 26);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cursor-glow {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle,
+        rgba(255, 255, 255, 0.12) 0%,
+        rgba(255, 255, 255, 0.06) 30%,
+        rgba(255, 255, 255, 0.02) 60%,
+        rgba(255, 255, 255, 0.00) 100%);      
+        border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      mix-blend-mode: screen;
+      filter: blur(15px);
+      transition: transform 0.06s ease-out;
+      z-index: 9999;
+    }
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+.socials{
+    display: flex;
+    gap: 10px;
+    display: flexbox;
+    justify-content: end;
+    background-color: rgb(32, 32, 32);
+    height: inherit;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.socialButtons{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.socialButtons img{
+    height: inherit;
+    object-fit: contain;
+}
+
+.myImage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding-bottom: 15px;
+}
+
+.connect{
+    color: rgb(199, 199, 199);
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 50px;
+    width: 75%;
+    align-items: center;
+    justify-self: center;
+}
+
+.connect button{    
+    display: flex;
+    height: 50px;
+    border-radius: 40px;
+    border: 2px solid white;
+    background: none;
+    color: rgb(199, 199, 199);
+    font-size: 16px;
+    object-fit: contain;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.connect button:hover{
+    transform: scale(1.25);
+    background-color: aliceblue;
+    color: black;
+}
+
+.connect h2{
+    font-size: 35px;
+}
+
+.about-me{
+    padding: 10px 30px;
+    background-color: rgb(29, 29, 29);
+    color:white;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+.skills{
+    padding: 10px 30px;
+    width: 75%;
+    background-color: rgb(29, 29, 29);
+    color:white;
+    border-radius: 10px;
+    display: flex;
+}
+
+.skill-box{
+    flex:1;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.skills-heading{
+    align-items:center;
+    display: flex;
+    justify-content:  center;
+    flex: 1;
+}
+
+.skill{
+    display: flex;
+    align-items: column;
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    padding: 25px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.skill img{
+    object-fit: contain;
+}
+
+.MyWorks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.MyWorks h2{
+    align-self: center;
+    justify-self: center;
+    font-size: 35px;
+    color: aliceblue;
+}
+
+.works{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+    color: aliceblue;
+}
+
+.work-item{ 
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(29, 29, 29);
+    border-radius: 10px;
+    justify-items: center;
+    height: 460px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-item img{
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    align-self: center;
+}
+
+.socialButtons :hover, .skill :hover{
+    transform: scale(1.25);
+}
+
+.label{
+    opacity: 0;
+}
+
+.work-item button{
+    display: flex;
+    height: 50px;
+    border-radius: 40px;
+    border: 2px solid white;
+    background: none;
+    color: rgb(199, 199, 199);
+    font-size: 16px;
+    object-fit: contain;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.work-item button:hover{
+    transform: scale(1.25);
+    background-color: aliceblue;
+    color: black;
+}

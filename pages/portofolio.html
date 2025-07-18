@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <div class="page-wrapper">
+        <header>
+            <div class="socials">
+                <button class="socialButtons" id="github" onclick="window.open('https://github.com/Abhinav-Sharmaaaa/')">
+                    <img src="../imgs/github.png">
+                </button>
+
+                <button class="socialButtons" id="linkedIn" onclick="window.open('https://www.linkedin.com/in/abhinav-sharma-0358002b4/')">
+                    <img src="../imgs/linkedIn.png">
+                </button>
+
+                <button class="socialButtons" id="stackOverflow" onclick="window.open('https://stackoverflow.com/users/24569218/abhinav-sharma')">
+                    <img src="../imgs/stackOverflow.png">
+                </button>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <div class="self">
+                <div class="myImage">
+                    <img src="../imgs/self.png"></img>
+                </div>
+
+                <div class="connect">
+                    <h2>Abhinav Sharma</h2>
+                    <button onclick="window.open('mailto:abhinav2654@gmail.com')">Get in Touch</button>
+                </div>
+
+                <div class="about-me">
+                    <h2>Hi, I am Abhinav Sharma, a Full Stack Developer and a B.Tech Student.</h2>
+                    <h3>I specialize in Backend Development and Designing</h3>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="skills-heading"><h1>My Skills</h1></div>
+                <div class="skill-box">
+                    <div class="skill" id="Android-Studio">
+                        <img src="../imgs/html.png" alt="HTML">
+                    </div>
+
+                    <div class="skill" id="CSS">
+                        <img src="../imgs/css.png" alt="CSS">
+                    </div>
+
+                    <div class="skill" id="JS">
+                        <img src="../imgs/JS.png" alt="JS">
+                    </div>
+
+                    <div class="skill" id="Python">
+                        <img src="../imgs/python.png" alt="Python">
+                    </div>
+
+                    <div class="skill" id="Java">
+                        <img src="../imgs/java.png" alt="Java">
+                    </div>
+
+                    <div class="skill" id="nodeJs">
+                        <img src="../imgs/NodeJs.png" alt="Node JS">
+                    </div>
+
+                    <div class="skill" id="springBoot">
+                        <img src="../imgs/springBoot.png" alt="springBoot">
+                    </div>
+
+                    <div class="skill" id="mongoDB">
+                        <img src="../imgs/mongodb.png" alt="mongoDB">
+                    </div>
+
+                    <div class="skill" id="Android-Studio">
+                        <img src="../imgs/Android Studio.png" alt="Android Studio">
+                    </div>
+                </div>
+            </div>
+
+            <div class="MyWorks">
+                <h2>My Works</h2>
+                    <div class="works">
+                        <div class="work-item" id="SecureVision">
+                            <img src="../imgs/SecureVision.png" alt="SecureVision">
+                            <h3>SecureVision</h3>
+                            <p>AI Facial Recognition Application that automatically logs attendance with respective times. Along with many more features like Anomaly Reporting and IP camera integration.</p>
+                            <button onclick="window.open('https://github.com/Abhinav-Sharmaaaa/Face-Recognition-Attendance-App')">Know More</button>
+                        </div>
+
+                        <div class="work-item" id="Count-It">
+                            <img src="../imgs/Count-It.png" alt="Count-It">
+                            <h3>Count-It</h3>
+                            <p>College Inventory Management System with Multiple User Support and Simple UI</p>
+                            <button onclick="window.open('https://github.com/Abhinav-Sharmaaaa/Count-It')">Know More</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    <script>
+    const glow = document.getElementById('cursorGlow');
+
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = `${e.clientX}px`;
+      glow.style.top = `${e.clientY}px`;
+    });
+  </script>
+</body>
+</html>
